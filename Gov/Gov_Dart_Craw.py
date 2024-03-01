@@ -208,7 +208,7 @@ if __name__ == "__main__":
     else:
         search_date = datetime.fromtimestamp(time.time() - 60 * 60 * 24).strftime("%Y%m%d")
 
-    auth = "e1f50cd341bc6203806fb932918ca19685800e09"
+    auth = ""
     target_address = "http://dart.fss.or.kr/api/search.json?auth=" + auth + "&start_dt=" + search_date + "&end_dt=" + search_date + "&page_set=100&page_no="
 
     dart_info_table = main(target_address)
